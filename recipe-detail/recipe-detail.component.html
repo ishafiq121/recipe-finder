@@ -1,0 +1,13 @@
+<div *ngIf="recipe">
+    <h2>{{recipe.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{recipe.id}}</div>
+    <div>
+      <label for="recipe-name">Recipe name: </label>
+      <input id="recipe-name" [(ngModel)]="recipe.name" placeholder="Recipe name"/>
+    </div>
+    <button (click)="goBack()">go back</button>
+    <button (click)="save()">save</button>
+  </div>
+  
+  
+  
